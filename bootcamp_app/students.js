@@ -8,7 +8,7 @@ const pool = new Pool({
   password: env.PASS,
   host: env.HOST,
   database: env.NAME,
-  port: env.PORT
+  port: env.PORT || 8001
 });
 
 const args = process.argv;
